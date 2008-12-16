@@ -8,6 +8,7 @@ Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Source0:	http://pypi.python.org/packages/source/s/%{tarname}/%{tarname}-%{version}.tar.gz
+Source1:	site.cfg
 License:	LGPLv2.1
 Group: 		Development/Python
 Url:		http://www.ar.media.kyoto-u.ac.jp/members/david/softwares/audiolab
@@ -26,6 +27,7 @@ via ALSA.
 
 %prep
 %setup -q -n %{tarname}-%{version}
+%__cp %SOURCE1 .
 
 %build
 %__python setup.py build
@@ -40,4 +42,4 @@ via ALSA.
 %files
 %defattr(-,root,root)
 %doc docs/pdf/*.pdf README.txt Changelog COPYING.txt NEWS
-%py_sitedir/scikits*
+%py_platsitedir/scikits*
