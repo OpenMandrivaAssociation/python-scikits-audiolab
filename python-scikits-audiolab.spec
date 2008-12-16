@@ -16,7 +16,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:	libsndfile1, libalsa
 Requires:	python-numpy >= 1.0
 BuildRequires:	sndfile-devel, libalsa-devel
-BuildRequires:	python-numpy >= 1.0, python-setuptools
+BuildRequires:	python-numpy-devel >= 1.0, python-setuptools
 %py_requires -d
 
 %description
