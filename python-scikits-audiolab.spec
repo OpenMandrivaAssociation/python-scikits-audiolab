@@ -1,7 +1,7 @@
 %define tarname	scikits.audiolab
 %define name	python-scikits-audiolab
 %define version	0.10.1
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Summary:	Python audio file I/O using numpy arrays
 Name:		%{name}
@@ -13,7 +13,6 @@ License:	LGPLv2.1
 Group: 		Development/Python
 Url:		http://www.ar.media.kyoto-u.ac.jp/members/david/softwares/audiolab
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Requires:	libsndfile1, libalsa
 Requires:	python-numpy >= 1.0
 BuildRequires:	sndfile-devel, libalsa-devel
 BuildRequires:	python-numpy-devel >= 1.0, python-setuptools
