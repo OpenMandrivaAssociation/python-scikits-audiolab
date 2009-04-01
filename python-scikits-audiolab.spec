@@ -1,7 +1,7 @@
 %define tarname	scikits.audiolab
 %define name	python-scikits-audiolab
-%define version	0.10.1
-%define release	%mkrel 2
+%define version	0.10.2
+%define release	%mkrel 1
 
 Summary:	Python audio file I/O using numpy arrays
 Name:		%{name}
