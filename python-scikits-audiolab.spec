@@ -1,7 +1,7 @@
 %define tarname	scikits.audiolab
 %define name	python-scikits-audiolab
 %define version	0.10.2
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Summary:	Python audio file I/O using numpy arrays
 Name:		%{name}
@@ -9,6 +9,7 @@ Version:	%{version}
 Release:	%{release}
 Source0:	http://pypi.python.org/packages/source/s/%{tarname}/%{tarname}-%{version}.tar.gz
 Source1:	site.cfg
+Patch0:		matapi.patch
 License:	LGPLv2.1
 Group: 		Development/Python
 Url:		http://www.ar.media.kyoto-u.ac.jp/members/david/softwares/audiolab
@@ -27,6 +28,7 @@ via ALSA.
 %prep
 %setup -q -n %{tarname}-%{version}
 %__cp %SOURCE1 .
+%patch0 -p0
 
 %build
 %__python setup.py build
