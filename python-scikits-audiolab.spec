@@ -1,7 +1,7 @@
 %define tarname	scikits.audiolab
 %define name	python-scikits-audiolab
-%define version	0.10.2
-%define release	%mkrel 2
+%define version	0.11.0
+%define release	%mkrel 1
 
 Summary:	Python audio file I/O using numpy arrays
 Name:		%{name}
@@ -32,6 +32,7 @@ via ALSA.
 
 %build
 %__python setup.py build
+find . -name .buildinfo | xargs rm -rf
 
 %install
 %__rm -rf %{buildroot}
@@ -42,5 +43,5 @@ via ALSA.
 
 %files
 %defattr(-,root,root)
-%doc docs/pdf/*.pdf README.txt Changelog COPYING.txt NEWS
+%doc docs/html README.txt Changelog COPYING.txt NEWS
 %py_platsitedir/scikits*
