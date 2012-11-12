@@ -1,0 +1,11 @@
+--- scikits/audiolab/pysndfile/matapi.py.bak	2009-03-25 07:16:45.000000000 -0400
++++ scikits/audiolab/pysndfile/matapi.py	2009-08-17 17:47:26.000000000 -0400
+@@ -105,7 +105,7 @@
+                 nframes = hdl.nframes - first
+                 data    = hdl.read_frames(nframes)
+             else:
+-                data    = hdl.read_frames(last)
++                data    = hdl.read_frames(last-first)
+         finally:
+             hdl.close()
+ 
