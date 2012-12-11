@@ -45,3 +45,31 @@ find . -name .buildinfo | xargs rm -rf
 %defattr(-,root,root)
 %doc docs/html README.txt Changelog COPYING.txt NEWS
 %py_platsitedir/scikits*
+
+
+%changelog
+* Fri Oct 29 2010 Michael Scherer <misc@mandriva.org> 0.11.0-2mdv2011.0
++ Revision: 590088
+- rebuild for python 2.7
+
+* Sun Jul 25 2010 Lev Givon <lev@mandriva.org> 0.11.0-1mdv2011.0
++ Revision: 558953
+- Update to 0.11.0.
+
+* Fri Aug 28 2009 Lev Givon <lev@mandriva.org> 0.10.2-2mdv2010.0
++ Revision: 421946
+- Patch bug in matapi.py.
+
+* Thu Apr 02 2009 Lev Givon <lev@mandriva.org> 0.10.2-1mdv2010.0
++ Revision: 363429
+- Update to 0.10.2.
+
+* Fri Dec 26 2008 Funda Wang <fwang@mandriva.org> 0.10.1-2mdv2009.1
++ Revision: 319422
+- rebuild for new python
+
+* Tue Dec 16 2008 Lev Givon <lev@mandriva.org> 0.10.1-1mdv2009.1
++ Revision: 315000
+- import python-scikits-audiolab
+
+
