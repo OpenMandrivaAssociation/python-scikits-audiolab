@@ -12,7 +12,7 @@ Source1:	site.cfg
 Patch0:		matapi.patch
 License:	LGPLv2.1
 Group: 		Development/Python
-Url:		http://www.ar.media.kyoto-u.ac.jp/members/david/softwares/audiolab
+Url:		https://www.ar.media.kyoto-u.ac.jp/members/david/softwares/audiolab
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:	python-numpy >= 1.0
 BuildRequires:	sndfile-devel, libalsa-devel
